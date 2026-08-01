@@ -1,4 +1,16 @@
 aid: seek
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/seek.png
 name: Seek
 description: 'Seek is a company surfaced as a portfolio company of qed-investors and added to the API
   Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
@@ -12,7 +24,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Fintech
@@ -23,5 +35,15 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/seek-domain-security.yml
 - type: Website
   url: https://www.seekrecs.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+  note: 'apis.yml Website domain (seekrecs.com) currently resolves to a repurposed
+    Indonesian lifestyle/recommendations site, not the QED-backed fintech "Seek";
+    no API/developer surface found. Domain identity needs review.'
